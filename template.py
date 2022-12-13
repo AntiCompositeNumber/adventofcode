@@ -2,14 +2,16 @@
 # coding: utf-8
 # SPDX-License-Identifier: Apache-2.0
 
+from __future__ import annotations
 
-def load_input(filename: str = "input.txt"):
+
+def load_input(filename: str):
     with open(filename) as f:
         for line in f:
             yield line.strip()
 
 
-def main():
+def main(filename: str = "input.txt") -> None:
     ...
 
 
